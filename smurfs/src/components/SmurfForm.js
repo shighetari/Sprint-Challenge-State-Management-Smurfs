@@ -25,21 +25,21 @@ const SmurfForm = (props) => {
         <>
             <form onSubmit={handleSubmit}>
                 <label>Name</label>
-                <br/>
+                <br />
                 <input type='text' name="name" value={name} onChange={e => handleName(e.target.value)} />
-                <br/>
+                <br />
                 <label>Age</label>
-                <br/>
+                <br />
                 <input type='number' name="age" value={age} onChange={e => handleAge(e.target.value)} />
-                <br/>
+                <br />
                 <label>Height</label>
-                <div></div>
+                <br />
                 <input type='number' name='height' value={height} onChange={e => handleHeight(e.target.value)} />
-                <div></div>
+                <br />
                 {/* <label>ID</label>
                 <div></div>
                 <input type='number' name='ID' value={iD} onChange={e => handleiD(e.target.value)} /> */}
-                <div></div>
+                <br />
                 <button type='submit'>Submit</button>
             </form>
         </>

@@ -19,8 +19,7 @@ export const smurfReducer = (state = initialState, action) => {
         case REMOVE_SMURF:
             return {
                 ...state,
-                smurfs: state.smurfs.filter((smurf) =>
-                    action.payload !== smurf.id)
+                smurfs: action.payload
 
 
             }

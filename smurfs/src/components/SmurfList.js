@@ -19,7 +19,7 @@ const SmurfList = props => {
         //         })
         props.getSmurfs()
 
-    }, [props.smurfs])
+    }, [])
     return (
         <>
             {props.error ? props.error : props.smurfs.map((smurf) => {
