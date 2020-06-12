@@ -1,4 +1,4 @@
-import { ADD_SMURF, REMOVE_SMURF, SET_ERROR } from '../actions'
+import { ADD_SMURF, REMOVE_SMURF, SET_ERROR, GET_SMURF } from '../actions'
 
 
 //init state
@@ -27,8 +27,14 @@ export const smurfReducer = (state = initialState, action) => {
         case SET_ERROR:
             return {
                 ...state,
-                
+
                 error: action.payload
+            }
+        case GET_SMURF:
+            return {
+                ...state,
+                smurfs: action.payload
+
             }
 
         default:
